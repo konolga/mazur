@@ -164,6 +164,6 @@ $('#contact-right').submit(function(e) {
         });
         e.preventDefault();
         $(this).get(0).reset()
-        alertify.success('Сообщение отпралено')
+        alertify.success('Сообщение отправлено')
     }
 });
