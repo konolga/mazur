@@ -1,0 +1,689 @@
+/*****************************
+
+        DEFAULT VALUES
+FONT FAMILY: Roboto Condensed
+
+COLOR SCHEME: 
+
+DARK WINE:               #8E1F3F        (Buttons, icons, links, lines and background)
+YANKEES BLUE:            #14213D        (Headings)
+GRAY:                    #41464b        (Paragraphs)
+WHITE:                   #FFFFFF        (Text with black backgrounds)
+REGISTRATED BLACK:       #000000        (Text)
+
+
+
+
+*******************************/
+/*GENERAL CSS*/
+html,
+body {
+    height: 100%;
+}
+
+body {
+
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+
+h3 {
+    color: #14213D;
+    text-transform: uppercase;
+}
+
+p {
+    color: #14213D;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/*****************************
+            NAVIGATION
+*******************************/
+.navbar {
+    padding: 20px 0;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.res-top-nav {
+    background: rgba(0, 0, 0, 0.7);
+    /*transparent black*/
+    padding: 7px 0;
+}
+
+.res-nav-wrapper {
+    padding: 0 85px;
+    padding: 10px;
+}
+
+.navbar-nav>li>a {
+
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: #fff;
+
+}
+
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus {
+    background: none;
+    color: #8E1F3F;
+}
+
+.navbar-toggler {
+    background: rgba(0, 0, 0, 0.1);
+    /*transparent black*/
+    border: 1px solid none;
+    padding: 0;
+    width: 60px;
+}
+
+.icon-bar{
+    display: block;
+    background-color: #8E1F3F;
+    height: 3px;
+    margin: 6px;
+
+
+}
+
+.navbar-collapse {
+    float: right;
+    max-height: none !important;
+    /*ignore bootsrap css property*/
+}
+
+.nav-item .active {
+    color: #8E1F3F;
+}
+
+/*****************************
+            HOME
+*******************************/
+
+
+#home {
+    height: 100%;
+}
+
+
+#home-cover {
+    height: 100%;
+    background-image: url("../img/bg-home.jpg");
+
+}
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    /*text-align: center; we use bootstrap class instead*/
+}
+
+#home-heading h3 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+}
+
+/*****************************
+        PARALLAX (generic)
+*******************************/
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*****************************
+        BUTTONS (generic)
+*******************************/
+.btn-general {
+
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: #fff;
+    color: #14213D;
+}
+
+
+.btn-red {
+    border-color: #8E1F3F;
+    color: #8E1F3F;
+}
+
+.btn-red:hover,
+.btn-red:focus {
+    background-color: #8E1F3F;
+    color: #fff;
+}
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    padding: 3px 15px;
+    border-radius: 0;
+    display: none;
+}
+
+#about-btn {
+    position: relative;
+    left: 40%
+}
+
+/*****************************
+            ANIMATE
+*******************************/
+#home-cover,
+#home-heading {
+    -webkit-animation-delay: .1s;
+            animation-delay: .1s;
+}
+
+#home-cover {
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+}
+
+#home-heading {
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+}
+
+#home-btn {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+
+
+
+/*****************************
+            CONTENT (generic)
+*******************************/
+.content-box {
+    padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #8E1F3F;
+    margin: 0 auto 30px auto;
+}
+
+.content-title-white h3 {
+    color: #fff;
+}
+
+/*****************************
+            SERVICES
+*******************************/
+.service-item {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.service-item-icon i {
+    color: #8E1F3F;
+    float: left;
+    padding: 15px;
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.service-item:hover .service-item-icon i {
+    color: #fff;
+    background-color: #8E1F3F;
+}
+
+.service-item-title h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.service-item-desc p {
+    margin: 0;
+    float: left;
+    text-align: justify;
+    padding-left: 85px;
+}
+
+/*****************************
+            ABOUT
+*******************************/
+#about {
+    margin: 0;
+}
+
+#about-content-box {
+    float: left;
+    height: 700px;
+
+}
+
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about .content-title h3 {
+    text-align: left;
+}
+
+#about .content-title-underline {
+    margin: 0 0 30px 0;
+    
+
+}
+
+#about-desc p {
+    margin-bottom: 30px;
+}
+
+#about-bg-diagonal {
+    width: 100%;
+    height: 700px;
+    float: right;
+    background-image: url("../img/bg-about.jpg");
+    border-left: 200px solid #fff;
+    border-top: 700px solid transparent;
+}
+
+/*****************************
+            WORK
+*******************************/
+.row.no-gutters [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.img-wrapper {
+    overflow: hidden
+}
+
+.img-wrapper img {
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    -o-transition: transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+    width: 100%
+}
+
+.img-wrapper img:hover {
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+
+/*****************************
+            TEAM
+*******************************/
+.team-member {
+    margin: 0 15px;
+
+}
+
+.team-member-info {
+    padding: 10px 0 30px 0;
+    text-align: center;
+}
+
+h4.team-member-name {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+    text-align: center;
+
+}
+
+h4.team-member-designation {
+    color: #8E1F3F;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+/*****************************
+            SOCIAL ICONS
+*******************************/
+.social-list {
+    padding: 10px 0 30px 0;
+
+
+}
+
+.social-list li {
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.social-icon i {
+    font-size: 17px;
+}
+
+.icon-gray i {
+    color: #14213D;
+}
+
+.icon-gray i:hover {
+    color: #8E1F3F;
+}
+
+.icon-white i {
+    color: #fff;
+}
+
+/*****************************
+            TESTIMONIALS
+*******************************/
+
+#testimonials-cover {
+    background-image: url("../img/bg-testimonials.jpg")
+}
+
+#testimonials .content-box {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+#customers-testimonials {
+    padding: 50px 0;
+}
+
+.testimonial img {
+    max-width: 120px;
+    margin: 0 auto 0 auto;
+}
+
+.testimonial blockquote {
+    border: 0;
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    color: #fff;
+    padding: 6px 150px;
+    position: relative;
+}
+
+.testimonial blockquote p {
+    color: #fff;
+}
+
+.testimonial blockquote::before,
+.testimonial blockquote::after {
+    font-size: 80px;
+    font-style: normal;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.testimonial blockquote::before {
+    content: "\201C";
+    top: 0;
+    left: 100px;
+}
+
+.testimonial blockquote::after {
+    content: "\201D";
+    bottom: 30px;
+    right: 100px;
+}
+
+.testimonial-author p {
+    color: #fff;
+}
+
+.testimonial-author p strong {
+    display: block;
+}
+
+/*****************************
+           PRICING
+*******************************/
+.pricing-box {
+    border: 3px solid #8E1F3F;
+    padding: 50px 0;
+    margin: 40px 0;
+}
+
+
+h4.pricing-title {
+    background-color: #8E1F3F;
+    display: inline-block;
+    padding: 7px 15px 7px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+
+h3.pricing-value {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h3.pricing-value sup {
+    font-size: 28px;
+    font-weight: normal;
+    vertical-align: super;
+}
+
+ul.pricing-spec {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 60px 0;
+}
+
+ul.pricing-spec li p {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.pricing-box-lg {
+    padding: 90px 0;
+    margin: 0;
+    background-color: #14213D
+}
+
+.pricing-box-lg h4.pricing-title {
+    background-color: #fff;
+}
+
+.pricing-box-lg ul.pricing-spec li p {
+    color: #E5E5E5;
+}
+
+.pricing-box-lg h3.pricing-value {
+    color: #8E1F3F;
+}
+
+
+/*****************************
+           STATISTICS
+*******************************/
+#stats-cover {
+    background-image: url("../img/bg-stats.jpg");
+}
+
+#stats .content-box {
+    background-color: rgba(0, 0, 0, .8)
+}
+
+.stats-item i {
+    color: #8E1F3F;
+}
+
+.stats-item h2 {
+    color: #E5E5E5;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.stats-item p {
+    color: #E5E5E5;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+/*****************************
+           CLIENTS
+*******************************/
+.client {
+    padding: 40px 0;
+}
+
+/*****************************
+           CONTACT
+*******************************/
+footer {
+    background-color: #41464b;
+    padding-top: 30px;
+    border-top: 5px solid;
+    border-top-color: transparent;
+}
+
+#contact-left h3,
+#contact-right h3 {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+#contact-left p {
+    color: #fff;
+    margin-bottom: 27px;
+}
+
+#contact-info {
+    background-image: url("../img/world-map.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+address {
+    color: #fff;
+}
+
+address strong,
+#phone-fax-email strong {
+    letter-spacing: 1px;
+}
+
+form .form-control {
+    background: transparent;
+    border-radius: 0;
+    border-color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/*****************************
+           FOOTER
+*******************************/
+#footer-bottom {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+#footer-copyrights p {
+    margin: 0;
+    color: #fff;
+}
+
+#footer-menu {
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#footer-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#footer-menu ul li {
+    display: inline-block;
+}
+
+#footer-menu a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#footer-menu a:hover {
+    color: #8E1F3F;
+}

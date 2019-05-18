@@ -1,0 +1,57 @@
+
+
+10152046295514425
+
+330613087717141
+
+====
+animation
+====
+save file
+daneden.github.io/animate.css
+
+
+====
+icons
+====
+fontawesome.io/icons
+
+
+====
+Brackets exentions
+====
+Lorem ipsum
+Beautify
+Brackets css color preview
+cutom work
+open in browser
+
+
+=====Animation==========
+plagin wow.js makes animation on user scroll
+
+=====Snippets=========
+extension Brackets Snippets (by edc) in order not to repeat HTML code
+
+=====Free images=====
+gratisography.com
+usplash
+
+====Magnific popup===
+plugin for cool zopp pop up effects
+
+====Carousel for team===
+owlcousel2.git.hub
+
+====Counter for stats===
+https://github.com/bfintal/Counter-Up
+
+==safari===
+https://autoprefixer.github.io/
+
+==testing==
+https://validator.w3.org/
+https://jigsaw.w3.org/css-validator/validator
+
+==Image compression==
+https://tinypng.com/
