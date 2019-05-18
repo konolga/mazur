@@ -142,3 +142,28 @@ $(function () {
 
     });
 });
+/*==================================
+            CONTACTS
+==================================*/
+$('#contact-right').submit(function(e) {
+    const name = document.getElementById('inputName'),
+          email = document.getElementById('inputEmail'),
+          message = document.getElementById('inputMessage');
+
+    if(!name.value||!email.value||!message.value){
+        alertify.error('Все поля должны быть заполнены')
+    
+    }
+    else{
+        message = $("#contact-right").serialize();
+        $.ajax({
+            url: "//formspree.io/ms.estete@gmail.com",
+            method: "POST",
+            data: {message: message},
+            dataType: "json"
+        });
+        e.preventDefault();
+        $(this).get(0).reset()
+        alertify.success('Сообщение отпралено')
+    }
+});
