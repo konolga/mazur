@@ -1,3 +1,2 @@
-# Modern-website
-Modern responsive wedsite template
-https://konolga.github.io/Modern-website/
+Personal portfolio of photographer Katya Mazur
+https://konolga.github.io/mazur/
